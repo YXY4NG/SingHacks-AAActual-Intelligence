@@ -2,10 +2,19 @@
 
 from __future__ import annotations
 
-from fastapi.testclient import TestClient
+import pytest
 
-from jb_clarity.api import app
-from jb_clarity.ingestion.loader import REQUIRED_FILES
+# The API lives behind the optional "api" extra. Without it these tests skip;
+# importing at module scope would fail collection for the whole engine suite.
+pytest.importorskip(
+    "fastapi",
+    reason='the api extra is not installed: pip install -e "engine[api,dev]"',
+)
+
+from fastapi.testclient import TestClient  # noqa: E402
+
+from jb_clarity.api import app  # noqa: E402
+from jb_clarity.ingestion.loader import REQUIRED_FILES  # noqa: E402
 
 
 def test_health_reports_optional_gemini(monkeypatch):

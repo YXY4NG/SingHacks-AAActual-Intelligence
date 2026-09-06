@@ -10,7 +10,12 @@ const SINGHACKS_DEMO_CASES = [
   { clientId: "CL-0012", label: "Cheung" },
 ] as const;
 
-export const MAX_FEATURED_CASES = 3;
+/**
+ * How many shortcuts the queue renders. Derived from the demonstration set so
+ * the two branches below cannot drift: changing the demo cases changes both,
+ * and every Book shows the same number of chips.
+ */
+export const MAX_FEATURED_CASES = SINGHACKS_DEMO_CASES.length;
 
 export type FeaturedCase = {
   caseId: string;

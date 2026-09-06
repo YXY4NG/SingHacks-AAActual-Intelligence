@@ -113,12 +113,10 @@ describe("selectFeaturedCases", () => {
     expect(featured.cases.map((entry) => entry.clientId)).toEqual([
       "MW-C-200",
       "MW-C-100",
-      "MW-C-400",
     ]);
     expect(featured.cases.map((entry) => entry.label)).toEqual([
       "Alarcon",
       "Roth",
-      "Karimova",
     ]);
   });
 
@@ -136,6 +134,12 @@ describe("selectFeaturedCases", () => {
 
   it("returns nothing for an empty queue", () => {
     expect(selectFeaturedCases([]).cases).toEqual([]);
+  });
+
+  it("shows the same number of shortcuts whichever Book is loaded", () => {
+    expect(selectFeaturedCases(SECOND_BOOK_QUEUE).cases).toHaveLength(
+      selectFeaturedCases(SINGHACKS_QUEUE).cases.length,
+    );
   });
 });
 
