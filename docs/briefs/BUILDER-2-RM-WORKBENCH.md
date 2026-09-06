@@ -33,7 +33,7 @@ Do not lead with a dashboard tour or architecture diagram. Lead with Priscillaâ€
 
 Read in this order:
 
-1. `CONTEXT.md`
+1. `README.md`
 2. `docs/SPEC.md`
 3. every file in `docs/adr/`
 4. `contracts/workbench.schema.json`
@@ -42,7 +42,7 @@ Read in this order:
 7. `singhacks-jb-wealth-intelligence/README.md`
 8. `git show prototype/infrastructure-state:.scratch/jb-clarity/infrastructure-state-prototype.html`
 
-Use the exact terms in `CONTEXT.md`. This is an RM Intelligence Workbench, not a chatbot, robo-adviser, trading terminal, or generic portfolio dashboard.
+Use the exact terms in `README.md`. This is an RM Intelligence Workbench, not a chatbot, robo-adviser, trading terminal, or generic portfolio dashboard.
 
 ## Ownership and fixed decisions
 

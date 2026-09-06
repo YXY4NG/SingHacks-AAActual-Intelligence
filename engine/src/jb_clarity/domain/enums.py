@@ -1,7 +1,7 @@
 """Canonical enumerations.
 
 Values mirror `contracts/workbench.schema.json` exactly. The glossary in
-`CONTEXT.md` governs the vocabulary used here.
+`README.md` governs the vocabulary used here.
 """
 
 from __future__ import annotations

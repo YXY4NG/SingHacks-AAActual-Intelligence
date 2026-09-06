@@ -33,7 +33,7 @@ The winning story is not model sophistication. It is that Priscilla sees the rig
 
 Read in this order:
 
-1. `CONTEXT.md`
+1. `README.md`
 2. `docs/SPEC.md`
 3. every file in `docs/adr/`
 4. `contracts/workbench.schema.json`
@@ -43,7 +43,7 @@ Read in this order:
 8. `singhacks-jb-wealth-intelligence/docs/DATA_DICTIONARY.md`
 9. `git show prototype/infrastructure-state:.scratch/jb-clarity/infrastructure-state-prototype.html`
 
-Use the canonical terms in `CONTEXT.md`. `event_log.csv` is authoritative for every 2026 event claim. Outside knowledge and model memory are not evidence.
+Use the canonical terms in `README.md`. `event_log.csv` is authoritative for every 2026 event claim. Outside knowledge and model memory are not evidence.
 
 ## Ownership and fixed decisions
 

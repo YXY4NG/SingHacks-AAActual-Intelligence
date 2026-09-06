@@ -114,9 +114,101 @@ npm run build
 
 The test suites cover the financial rules, Evidence Packet integrity, Priority Queue behavior, language validation, security controls, responsive interface, and the complete RM workflow.
 
+## The language we use
+
+These are the canonical terms. They appear in the interface, the code, the
+tests and the rest of this README, and they are chosen deliberately: the
+_Not:_ line under each one names what that term is specifically **not**, which
+is usually where a wealth product quietly starts overclaiming.
+
+**Relationship Manager (RM)** — The bank professional responsible for understanding the client, reviewing evidence, and deciding what advice is appropriate. In this challenge, the RM is Priscilla Ong.
+_Not:_ Adviser bot, autonomous adviser.
+
+**Wealth Intelligence Layer** — The capability between portfolio data and the RM that identifies what matters, explains why, anticipates plausible developments, and proposes actions for review.
+_Not:_ Portfolio dashboard, robo-adviser.
+
+**Advisory Insight** — A client-specific, actionable finding supported by portfolio data, client context, and traceable assumptions or events. It communicates what changed, why it matters now, and what the RM may consider doing.
+_Not:_ Alert, notification, AI answer.
+
+**Evidence Chain** — The inspectable path from source data and approved events through calculations and assumptions to an Advisory Insight.
+_Not:_ AI reasoning.
+
+**Controlled Event Source** — The authoritative record used to ground claims about external events. For this challenge, `event_log.csv` overrides model memory about 2026 events.
+_Not:_ News feed, model knowledge.
+
+**Advisory Action** — A possible next step that the RM may review, modify, reject, or use to prepare a client conversation. It is not autonomous financial advice.
+_Not:_ Automated trade, AI decision.
+
+**Book** — All clients and portfolios for which an RM is responsible. In the challenge dataset, Priscilla's Book contains 20 clients and 24 portfolios.
+_Not:_ Portfolio.
+
+**Client Case** — A prioritised bundle of related Advisory Insights about one client that warrants the RM's attention and preparation for a conversation.
+_Not:_ Alert, notification.
+
+**Priority Queue** — An ordered view of Client Cases that helps the RM decide whom to contact first and why.
+_Not:_ Dashboard, client list.
+
+**Conversation Plan** — An RM-editable preparation brief containing the client-specific explanation, evidence, uncertainties, and possible next steps for discussion.
+_Not:_ AI advice, automated recommendation.
+
+**Priority Rationale** — The visible, deterministic reasons a Client Case occupies its position in the Priority Queue, including time urgency, threshold status, client impact, objective mismatch, and relationship signals. Evidence Confidence is displayed separately.
+_Not:_ AI score, black-box ranking.
+
+**Evidence Packet** — The bounded set of source records, derived metrics, and approved events supplied to AI for one Client Case. Every generated factual claim must point back to an item in this packet.
+_Not:_ Prompt context, entire dataset.
+
+**Evidence Conflict** — A material disagreement between sources that prevents the system from treating a conclusion as settled. It lowers displayed confidence and remains visible to the RM.
+_Not:_ Data cleanup, AI reconciliation.
+
+**Urgency** — How soon and how seriously a Client Case requires RM attention, independent of whether all supporting evidence is complete.
+_Not:_ Confidence, risk tolerance.
+
+**Confidence** — How strongly the available Evidence Packet supports a Client Case's interpretation. Confidence does not determine whether an urgent case deserves attention.
+_Not:_ Urgency, probability of loss.
+
+**Collateral Stress Test** — A transparent what-if calculation showing how a defined change in collateral value would affect a credit facility's loan-to-value ratio and margin-call status.
+_Not:_ Market forecast, price prediction.
+
+**Safety Override** — A deterministic condition that assigns a Client Case Critical Urgency regardless of its weighted score because an active breach or imminent unmet obligation requires immediate RM attention.
+_Not:_ AI escalation, high score.
+
+**Eligible Liquidity** — Assets realistically available to meet a particular obligation within its required time window, after accounting for liquidity tier, currency, commitments, and known restrictions.
+_Not:_ Cash balance, portfolio value.
+
+**Case Resolution** — The RM-recorded outcome of reviewing a Client Case: prepare a conversation, request information, involve a specialist, or dismiss the case with a reason.
+_Not:_ Automated action, trade execution.
+
+**Guided Action** — A bounded request the RM can make of the Wealth Intelligence Layer, such as explaining a case, showing its evidence, or preparing a Conversation Plan.
+_Not:_ Open-ended chat, autonomous agent.
+
+**Client-Ready View** — An RM-reviewed rendering of a Conversation Plan in the client's preferred reporting language, shown alongside the canonical internal version with unchanged figures and evidence references.
+_Not:_ Raw translation, autonomous client message.
+
+**Anticipatory Signal** — A source-cited indication that a client is likely to encounter a material financial or governance issue soon, before the client raises it with the RM.
+_Not:_ Alert spam, market prediction.
+
+**Open Loop** — An unresolved client question, commitment, or repeated discussion evidenced in RM notes and awaiting RM confirmation, resolution, deferral, or assignment.
+_Not:_ Fact, AI task.
+
+**Meeting Brief** — An RM-facing preparation view that combines a Client Case's timely issue, Evidence Chain, Open Loops, preferred language, questions to ask, and possible next steps.
+_Not:_ Client report, automated outreach.
+
+**Governance Clock** — The time-sensitive compliance and administrative obligations relevant to a Client Case, including a KYC review that is due soon or overdue.
+_Not:_ Overdue KYC when it is only due soon.
+
+### Working agreements
+
+Use these terms in interfaces, tests and UI copy. Where evidence conflicts with
+a recorded decision in `docs/adr/`, surface the conflict rather than silently
+overriding it: a disagreement the data actually contains is a finding, not a
+defect to smooth away.
+
+`docs/SPEC.md` is the behavioural source of truth. The briefs that commissioned
+each slice are archived in `docs/briefs/`, and what each slice delivered is
+recorded in `docs/handoff/`.
+
 ## Learn more
 
-- [Product language and principles](CONTEXT.md)
 - [Intelligence engine](engine/README.md)
 - [RM workbench](web/README.md)
 - [Multi-agent intelligence architecture](docs/architecture/multi-agent-intelligence.md)

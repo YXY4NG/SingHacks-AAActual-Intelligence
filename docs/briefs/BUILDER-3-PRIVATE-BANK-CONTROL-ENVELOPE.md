@@ -21,7 +21,7 @@ This is a control envelope around the existing Workbench contract. It is not a r
 
 Read these files completely, in this order:
 
-1. `CONTEXT.md`
+1. `README.md`
 2. `docs/SPEC.md`
 3. every decision under `docs/adr/`
 4. `contracts/workbench.schema.json`
@@ -84,7 +84,7 @@ Builder 3 does not own:
 - trade, order, email, message, calendar, or CRM execution;
 - production identity, HSM, SIEM, WORM storage, network segmentation, or regulatory approval.
 
-Use canonical terms from `CONTEXT.md`. Keep Urgency separate from Confidence. Preserve the versioned Workbench boundary and all existing state invariants.
+Use canonical terms from `README.md`. Keep Urgency separate from Confidence. Preserve the versioned Workbench boundary and all existing state invariants.
 
 ## Target request path
 
