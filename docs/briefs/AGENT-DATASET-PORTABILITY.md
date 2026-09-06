@@ -47,7 +47,7 @@ Read these files completely:
 
 - `AGENTS.md`
 - `CONTEXT.md`
-- `.scratch/jb-clarity/spec.md`
+- `docs/SPEC.md`
 - `docs/adr/0004-use-deterministic-prioritisation-and-ai-explanation.md`
 - `docs/adr/0005-make-uncertainty-and-ai-grounding-visible.md`
 - `docs/adr/0007-separate-analytics-presentation-and-language-generation.md`

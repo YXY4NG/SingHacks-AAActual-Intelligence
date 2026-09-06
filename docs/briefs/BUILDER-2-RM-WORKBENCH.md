@@ -35,7 +35,7 @@ Read in this order:
 
 1. `AGENTS.md`
 2. `CONTEXT.md`
-3. `.scratch/jb-clarity/spec.md`
+3. `docs/SPEC.md`
 4. every file in `docs/adr/`
 5. `contracts/workbench.schema.json`
 6. `artifacts/workbench.fixture.json`

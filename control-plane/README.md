@@ -1,6 +1,6 @@
 # Control envelope — AAActual Intelligence
 
-The bank-sandbox control plane from `BUILDER-3-PRIVATE-BANK-CONTROL-ENVELOPE.md`.
+The bank-sandbox control plane from `docs/briefs/BUILDER-3-PRIVATE-BANK-CONTROL-ENVELOPE.md`.
 It wraps the existing Workbench artifact with identity, object-level
 authorization, data minimisation, audit and RM approval.
 

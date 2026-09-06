@@ -23,7 +23,7 @@ Read these files completely, in this order:
 
 1. `AGENTS.md`
 2. `CONTEXT.md`
-3. `.scratch/jb-clarity/spec.md`
+3. `docs/SPEC.md`
 4. every decision under `docs/adr/`
 5. `contracts/workbench.schema.json`
 6. `docs/research/private-banking-open-source.md`
