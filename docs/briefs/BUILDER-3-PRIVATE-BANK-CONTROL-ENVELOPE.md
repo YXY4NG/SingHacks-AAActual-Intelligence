@@ -31,7 +31,7 @@ Read these files completely, in this order:
 8. `BUILDER-1-INTELLIGENCE-ENGINE.md`
 9. `BUILDER-2-RM-WORKBENCH.md`
 
-Follow `docs/agents/issue-tracker.md` before claiming or completing implementation tickets. If a published GitHub issue differs from this brief, the published issue is authoritative.
+If a GitHub issue published in the upstream repository differs from this brief, the published issue is authoritative.
 
 ## Required outcome
 

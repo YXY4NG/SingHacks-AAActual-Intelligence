@@ -59,7 +59,7 @@ Read these files completely:
 - `singhacks-jb-wealth-intelligence/docs/DATA_DICTIONARY.md`
 - `contracts/workbench.schema.json`
 
-If the work is tracked in a GitHub Issue, also follow `docs/agents/issue-tracker.md` and `docs/agents/triage-labels.md`. Treat the published issue as authoritative if it conflicts with this brief.
+If the work is tracked in a GitHub Issue in the upstream repository, treat the published issue as authoritative where it conflicts with this brief.
 
 ## Current state to preserve
 
