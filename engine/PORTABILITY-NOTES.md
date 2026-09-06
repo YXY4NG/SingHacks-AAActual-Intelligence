@@ -53,7 +53,7 @@ The identifier layer was already portable. The time layer was not.
 `docs/adr/0010-preserve-time-and-ranking-integrity.md` says Client Cases
 "expose the five supplied snapshots". That wording is specific to the SingHacks
 Book. Step 5 of the portability brief requires count-aware language derived
-from the data. Surfacing rather than silently overriding, per `AGENTS.md`: the
+from the data. Surfacing rather than silently overriding, per the working agreements in `CONTEXT.md`: the
 ADR's *intent* — a replayable timeline that compares selected dates and states
 its endpoints — is preserved exactly; only the hardcoded count changes. No ADR
 decision is reversed.

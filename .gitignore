@@ -7,6 +7,9 @@ node_modules/
 .next/
 coverage/
 web/public/data/intelligence.json
+# sync-data regenerates these from artifacts/ and contracts/ on dev, build and e2e
+web/public/data/workbench.json
+web/public/data/workbench.schema.json
 
 *.egg-info/
 

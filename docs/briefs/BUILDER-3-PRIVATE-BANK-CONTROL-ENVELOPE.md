@@ -21,15 +21,14 @@ This is a control envelope around the existing Workbench contract. It is not a r
 
 Read these files completely, in this order:
 
-1. `AGENTS.md`
-2. `CONTEXT.md`
-3. `docs/SPEC.md`
-4. every decision under `docs/adr/`
-5. `contracts/workbench.schema.json`
-6. `docs/research/private-banking-open-source.md`
-7. `docs/research/open-source-leverage.md`
-8. `BUILDER-1-INTELLIGENCE-ENGINE.md`
-9. `BUILDER-2-RM-WORKBENCH.md`
+1. `CONTEXT.md`
+2. `docs/SPEC.md`
+3. every decision under `docs/adr/`
+4. `contracts/workbench.schema.json`
+5. `docs/research/private-banking-open-source.md`
+6. `docs/research/open-source-leverage.md`
+7. `BUILDER-1-INTELLIGENCE-ENGINE.md`
+8. `BUILDER-2-RM-WORKBENCH.md`
 
 If a GitHub issue published in the upstream repository differs from this brief, the published issue is authoritative.
 

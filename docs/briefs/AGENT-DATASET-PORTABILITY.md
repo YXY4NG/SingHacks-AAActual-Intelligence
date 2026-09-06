@@ -45,7 +45,6 @@ Treat Steps 3, 4, 6, 7, 9 and 11 as post-submission hardening unless the core de
 
 Read these files completely:
 
-- `AGENTS.md`
 - `CONTEXT.md`
 - `docs/SPEC.md`
 - `docs/adr/0004-use-deterministic-prioritisation-and-ai-explanation.md`

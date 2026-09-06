@@ -103,3 +103,14 @@ _Avoid_: Client report, automated outreach
 **Governance Clock**:
 The time-sensitive compliance and administrative obligations relevant to a Client Case, including a KYC review that is due soon or overdue.
 _Avoid_: Overdue KYC when it is only due soon
+
+## Working agreements
+
+Use the glossary terms above in interfaces, tests, and UI copy. Where evidence
+conflicts with a recorded decision in `docs/adr/`, surface the conflict rather
+than silently overriding it: a disagreement the data actually contains is a
+finding, not a defect to smooth away.
+
+`docs/SPEC.md` is the behavioural source of truth. The briefs that commissioned
+each slice are archived in `docs/briefs/`, and what each slice delivered is
+recorded in `docs/handoff/`.

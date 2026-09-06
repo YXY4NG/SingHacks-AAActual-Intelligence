@@ -122,5 +122,8 @@ The test suites cover the financial rules, Evidence Packet integrity, Priority Q
 - [Multi-agent intelligence architecture](docs/architecture/multi-agent-intelligence.md)
 - [Threat model](docs/THREAT-MODEL.md)
 - [Challenge dataset and data dictionary](singhacks-jb-wealth-intelligence/README.md)
+- [Behavioural specification](docs/SPEC.md), the [briefs](docs/briefs/) that commissioned each slice, and the [handoffs](docs/handoff/) recording what each delivered
+
+This repository is a personal fork. `origin` is `YXY4NG/SINGHACKS-AAActual-Intelligence`; `upstream` is the shared team repository `realjunjiejj/singhack`.
 
 JB Clarity is not trying to replace the Relationship Manager. It is designed to make every client conversation more timely, more defensible, and more human.

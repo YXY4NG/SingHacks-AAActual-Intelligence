@@ -321,7 +321,7 @@ changing only the generation clock does not.
 
 ## Recommended continuation order
 
-1. Read `AGENTS.md`, `CONTEXT.md`, every relevant ADR, and this handoff.
+1. Read `CONTEXT.md`, every relevant ADR, and this handoff.
 2. Run the focused red suite and confirm the same five failures.
 3. Fix nested Workbench serialization and CLI validation.
 4. Block material data-integrity failures and suppress blocked outward data.

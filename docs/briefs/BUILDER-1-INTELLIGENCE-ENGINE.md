@@ -33,16 +33,15 @@ The winning story is not model sophistication. It is that Priscilla sees the rig
 
 Read in this order:
 
-1. `AGENTS.md`
-2. `CONTEXT.md`
-3. `docs/SPEC.md`
-4. every file in `docs/adr/`
-5. `contracts/workbench.schema.json`
-6. `artifacts/workbench.fixture.json`
-7. `docs/research/open-source-leverage.md`
-8. `singhacks-jb-wealth-intelligence/README.md`
-9. `singhacks-jb-wealth-intelligence/docs/DATA_DICTIONARY.md`
-10. `git show prototype/infrastructure-state:.scratch/jb-clarity/infrastructure-state-prototype.html`
+1. `CONTEXT.md`
+2. `docs/SPEC.md`
+3. every file in `docs/adr/`
+4. `contracts/workbench.schema.json`
+5. `artifacts/workbench.fixture.json`
+6. `docs/research/open-source-leverage.md`
+7. `singhacks-jb-wealth-intelligence/README.md`
+8. `singhacks-jb-wealth-intelligence/docs/DATA_DICTIONARY.md`
+9. `git show prototype/infrastructure-state:.scratch/jb-clarity/infrastructure-state-prototype.html`
 
 Use the canonical terms in `CONTEXT.md`. `event_log.csv` is authoritative for every 2026 event claim. Outside knowledge and model memory are not evidence.
 
